@@ -51,3 +51,19 @@ Write both files with the Write tool (writing through the shell is blocked).
    - The persona's opinion in their own words: would they keep the app? score /10.
 2. `results/<persona>/findings.json`:
    `{"score": 7, "issues": [{"title": "...", "severity": "major", "screen": "Sign-up", "screens": ["05", "06"]}]}`
+
+## About this app: Quizzy (iOS)
+- Daily puzzle games. No account, no sign-up, no e-mail, no network features: skip any
+  step about accounts. The app is always in dark mode by design (not a bug).
+- Language: Spanish or English only (setting inside the app; otherwise it follows the
+  device). Any other device language falls back to English: that is expected, but report
+  text that stays in the wrong language or mixes both.
+- Main screen: a list of games, each with today's puzzle. Games: Trocitos (Spanish only),
+  Sopa de letras / Word Search, Autodefinido / Crossword, Laberinto / Maze, Palabro
+  (Wordle-like), Anygram, Hashtag, Elemental (logic grid), Sabueso (deduction grid),
+  Mini crossword and Decoder (colour code). Anygram can take a few seconds to prepare
+  in Spanish: wait before calling it a hang.
+- Good coverage: open at least 3 different games, make real moves in each, open its
+  rules/help, try a hint, finish or give up one game and check the result sheet, then
+  come back to the main screen and check the game shows as done. Visit Settings
+  (language switch, reset progress: you may use reset only at the very end).
